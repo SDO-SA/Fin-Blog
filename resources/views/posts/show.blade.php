@@ -6,7 +6,7 @@
         </h1>
         <div class="mt-2 flex justify-between items-center">
             <div class="flex py-5 text-base items-center">
-                <x-posts.author :author="$post->author" />
+                <x-posts.author :author="$post->author" size="md" />
                 <span class="text-gray-500 text-sm">| {{ $post->avgReadTime() }} min read</span>
             </div>
             <div class="flex items-center">
@@ -22,7 +22,7 @@
         <div
             class="article-actions-bar my-6 flex text-sm items-center justify-between border-t border-b border-gray-100 py-4 px-2">
             <div class="flex items-center">
-                <livewire:like-button :key="$post->id" :$post />
+                <livewire:like-button :key="'likebutton-'. $post->id" :$post />
             </div>
             <div>
                 <div class="flex items-center">
@@ -39,5 +39,6 @@
             <x-posts.category-badge :category="$category" />
             @endforeach
         </div>
+        <livewire:post-comments :key="'comments' . $post->id" :$post />
     </article>
 </x-app-layout>
