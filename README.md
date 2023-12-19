@@ -1,4 +1,24 @@
-# Fin Blog 🗨
+<br />
+<div align="center">
+  <h1 align="center">
+    Fin Blog 🗨
+  </h1>
+
+  <p align="center">
+    <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"/>
+    <img src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white"/>
+    <img src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white"/>
+    <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"/>
+    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
+  </p>
+  <p align="center">
+    Made by <a href="https://github.com/SDO-SA" target="_blank">SDO-SA</a>
+  </p>
+  
+</div>
+<br/>
+
 Hello everyone !! 👀
 
 I have just created this project using [PHP 8.3](https://php.net/) , [Laravel 10.x](https://laravel.com/docs/10.x) , [JetStream Laravel 4.x](https://jetstream.laravel.com/introduction.html) , [Livewire 2.x](https://laravel-livewire.com/docs/2.x/quickstart) and [Filament PHP 3.x](https://filamentphp.com/docs/3.x/panels/installation) !!
@@ -81,7 +101,7 @@ Now feel free to explore Fin Blog and have fun !! 😎
 
 ## License 💯
 
-Fin Blog is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Fin Blog is open-sourced software licensed under the [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE.txt)
 
 
 
