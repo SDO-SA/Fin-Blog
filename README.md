@@ -1,66 +1,91 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Fin Blog 🗨
+Hello everyone !! 👀
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+I have just created this project using [PHP 8.3](https://php.net/) , [Laravel 10.x](https://laravel.com/docs/10.x) , [JetStream Laravel 4.x](https://jetstream.laravel.com/introduction.html) , [Livewire 2.x](https://laravel-livewire.com/docs/2.x/quickstart) and [Filament PHP 3.x](https://filamentphp.com/docs/3.x/panels/installation) !!
 
-## About Laravel
+It was my first time using PHP for building Full Stack Website and suprisingly i had so much fun doing so 🔥
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## About Project 💡
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+As i mentioned before , it's a blog website that you can 
+* <strong>Login/Register </strong>
+* <strong>View & Like others Posts </strong>
+* <strong>Create your own Posts </strong>
+* <strong>Profile Editing </strong>
+* <strong>Admin Panel </strong>
 
-## Learning Laravel
+## Purpose ❓
+The purpose of this repository is to try new development practices on [Laravel](https://laravel.com/docs/10.x) such as:
+- [Authentication](https://laravel.com/docs/10.x/authentication)
+- API
+  - Token authentication
+  - [API Resources](https://laravel.com/docs/10.x/eloquent-resources)
+  - Versioning
+- [Blade](https://laravel.com/docs/10.x/blade)
+- [Filesystem](https://laravel.com/docs/10.x/filesystem)
+- [Migrations](https://laravel.com/docs/10.x/migrations)
+- [Policies](https://laravel.com/docs/10.x/authorization)
+- [Providers](https://laravel.com/docs/10.x/providers)
+- [Requests](https://laravel.com/docs/10.x/validation#form-request-validation)
+- [Seeding & Factories](https://laravel.com/docs/10.x/seeding)
+- Many More to explore
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Website Preview 📸
+### Home Page
+![Home Overview](https://i.imgur.com/Lz7Y8AV.png)
+### Posts Page
+![Posts Overview](https://i.imgur.com/eFURa74.png)
+## Installation 👨🏻‍💻
+Follow these commands to download and install this project on your local machine ! 💻
+```bash
+$ git clone https://github.com/SDO-SA/Fin-Blog.git
+$ cd fin-blog
+$ cp .env.example .env
+$ composer install
+$ npm install
+```
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Setup and Run 🛠
+<Strong>Step 1:</Strong>
+You have to create a database named ```finblog``` and then edit your ```DB_DATABASE=finblog``` in this ```.env``` file
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=finblog
+DB_USERNAME=root
+DB_PASSWORD=
+```
+<Strong>Step 2:</Strong>
+After creating the database run these commands to migrate and seed data on your database!
+```bash
+$ php artisan migrate
+$ php artisan db:seed
+$ php artisan key:generate
+```
+This will create a new admin user that you can use to sign in :
+```yml
+email: admin@test.com
+password: password
+```
+<Strong>Step 3:</Strong>
+Last step follow these commands to build and run the website !
+```bash
+$ npm run build
+$ php artisan serve
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Explore ✈
+Now feel free to explore Fin Blog and have fun !! 😎
 
-## Laravel Sponsors
+## License 💯
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Fin Blog is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
